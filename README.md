@@ -1,10 +1,11 @@
 # Repo4
 For Team 4
 
-* My name is Cheryn Lee Shueh Yin 240102
-* My name is Wang Bo 236174
-* My name is Lum Qian Ying 239785
-* My name is Nur Farhana Bt Farishamudin 240912
-* My name is Leong Shye Li 239527
-* My name is Tamilarasi Jayasangar 239281
-* My name is Shanthini Govindasamy 239215
+Team members:
+1. Cheryn Lee Shueh Yin 240102
+2. Wang Bo 236174
+3. Lum Qian Ying 239785
+4. Nur Farhana Bt Farishamudin 240912
+5. Leong Shye Li 239527
+6. Tamilarasi Jayasangar 239281
+7. Shanthini Govindasamy 239215
