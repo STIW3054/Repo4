@@ -58,9 +58,11 @@ public class CloneRepository {
         fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int returnValue = fc.showOpenDialog(null);  
         String folderpath = null;
+        String logFileFolderPath = null;
         
         if (returnValue == JFileChooser.APPROVE_OPTION){  
             folderpath = fc.getSelectedFile().getPath();
+            logFileFolderPath = folderpath;
         } else{
             System.out.println("Failed");
         }
@@ -91,6 +93,9 @@ public class CloneRepository {
             }catch (TimeoutException ex) {
                 System.out.println("\nRepo \""+futures.get(fu)+"\" download timed out!\n");
                 fu.cancel(true);
+                String matric = futures.get(fu);
+                String matricL = matric.substring(matric.lastIndexOf(".git")-6, matric.lastIndexOf(".git"));
+                LogFile.createLogFile(matricL, logFileFolderPath);
             } catch (ExecutionException ex) {
                 Logger.getLogger(CloneRepository.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -98,3 +103,4 @@ public class CloneRepository {
         FixedThreadPool.shutdown();
     }
 }
+

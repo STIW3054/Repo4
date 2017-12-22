@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //clone using JGit

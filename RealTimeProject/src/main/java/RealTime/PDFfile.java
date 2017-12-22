@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //create PDF file (output, error, log)
