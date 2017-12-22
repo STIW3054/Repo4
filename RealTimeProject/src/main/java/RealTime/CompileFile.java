@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //compile java and maven file

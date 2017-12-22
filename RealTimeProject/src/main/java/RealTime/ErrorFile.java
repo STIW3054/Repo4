@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //create error file and store message (parse matricNo and error messages from CompileFile.java
@@ -6,3 +5,4 @@ package RealTime;
 public class ErrorFile {
     
 }
+
