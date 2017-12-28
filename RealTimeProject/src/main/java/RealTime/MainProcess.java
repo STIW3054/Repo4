@@ -1,6 +1,9 @@
 package RealTime;
 
-//for main process
+/**
+ *
+ * @author Group4
+ */
 
 import java.io.File;
 import java.io.IOException;
