@@ -70,7 +70,7 @@ public class RunFile {
         }
         for(Future<String> fu:futures.keySet()){
             try {
-                fu.get(30, TimeUnit.SECONDS);
+                fu.get(8, TimeUnit.SECONDS);
             } catch (InterruptedException | ExecutionException ex) {
                 fu.cancel(true);
                 System.out.println("Already cancel!");
