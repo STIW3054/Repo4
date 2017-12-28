@@ -1,16 +1,15 @@
 package RealTime;
 
 /**
-*
-* @author Group4
-*/
+ *
+ * @author Group4
+ */
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
-//store to Log folder
 public class LogFile {
 
     public static String Se = File.separator;
