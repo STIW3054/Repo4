@@ -7,7 +7,6 @@ import java.util.List;
  *
  * @author Group4
  */
-
 public class FilterFile {
     
     public static List <File> filter_files_by_type (String Filetype,File Path, List <File> FileList){        
