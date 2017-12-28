@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //clone using JGit
@@ -27,15 +26,15 @@ public class JGitClone {
             Git git = Git.cloneRepository().setURI(remoteUrl).setDirectory(repoDir).call();
             System.out.println("Cloning from " + remoteUrl + " to " + git.getRepository());
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\nInvalid GitHub repository " + remoteUrl + "\n");
         }
     }
 
     public String download(String appName, String codeUrl) {
         try {
             //代码拷贝目录
-            localPath = System.getProperty("user.home") + "/" + appName;
-            localRepo = new FileRepository(localPath + "/.git");
+            localPath = System.getProperty("user.home") + LogFile.Se + appName;
+            localRepo = new FileRepository(localPath + LogFile.Se + ".git");
             git = new Git(localRepo);
             String[] gitCodeUrl = codeUrl.split("::");
             if (gitCodeUrl.length != 2) {
@@ -59,6 +58,7 @@ public class JGitClone {
         try {
             Git.cloneRepository().setURI(remotePath).setBranch(branch).setDirectory(new File(copyPath)).call();
         } catch (Exception e) {
+            
             System.out.println(e.getMessage());
         }
     }
