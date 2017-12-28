@@ -9,7 +9,7 @@ import java.io.File;
 
 /**
  *
- * @author Aman
+ * @author Group4
  */
 public class JGitClone {
     private String localPath, remotePath, branch;
@@ -58,6 +58,7 @@ public class JGitClone {
         try {
             Git.cloneRepository().setURI(remotePath).setBranch(branch).setDirectory(new File(copyPath)).call();
         } catch (Exception e) {
+            
             System.out.println(e.getMessage());
         }
     }
