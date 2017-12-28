@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //create PDF file (output, error, log)
@@ -98,4 +97,3 @@ public class PDFfile {
         }
         return readLines;
     }
-}

@@ -58,7 +58,6 @@ public class JGitClone {
         try {
             Git.cloneRepository().setURI(remotePath).setBranch(branch).setDirectory(new File(copyPath)).call();
         } catch (Exception e) {
-            
             System.out.println(e.getMessage());
         }
     }
