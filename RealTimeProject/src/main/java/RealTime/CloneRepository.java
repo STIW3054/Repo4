@@ -1,4 +1,3 @@
-
 package RealTime;
 
 //clone repository using Executor
@@ -8,6 +7,9 @@ package RealTime;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
@@ -43,15 +45,30 @@ public class CloneRepository {
         @Override
         public String call() throws Exception {
             JGitClone.clone(git,folderpath);
-//            Set<File> FileSet = new HashSet();
-//            File Path = new File (folderpath + git.substring(git.lastIndexOf(".git")-6,git.lastIndexOf(".git")));
-//            
-//            很重要
-//            FileSet = FindJavaFile.getJavaFiles(Path,FileSet);
             return git;
         }
     }
 
+    public static List <String> CloneRep(String Path, String Foldername) throws InterruptedException, IOException {
+        
+        ExecutorService FixedThreadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
+        
+        JSONParser parser = new JSONParser();
+        Object obj;
+        Map<Future<String>,String> futures = new HashMap<>();
+        String repo = null;
+        
+        List <String> repos = new ArrayList();
+        
+        try {
+            obj = parser.parse(new FileReader("githubrepo.json"));
+            JSONObject jsonObject = (JSONObject) obj;            
+            for (int i = 9; i < 21; i++) {
+                String id = Integer.toString(i);
+                repo = (String) jsonObject.get(id);
+                Future<String> future = FixedThreadPool.submit(new Runner(repo,Path));
+                futures.put(future,repo);
+                repos.add(repo);
     public static void CloneRep() throws InterruptedException {
         JFileChooser fc = new JFileChooser(""); 
         fc.setMultiSelectionEnabled(false);
@@ -95,12 +112,13 @@ public class CloneRepository {
                 fu.cancel(true);
                 String matric = futures.get(fu);
                 String matricL = matric.substring(matric.lastIndexOf(".git")-6, matric.lastIndexOf(".git"));
-                LogFile.createLogFile(matricL, logFileFolderPath);
+                LogFile.CreateLog("The repository of " + matricL + " downloading time out!",Path, matricL);
             } catch (ExecutionException ex) {
                 Logger.getLogger(CloneRepository.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         FixedThreadPool.shutdown();
+        return repos;
     }
 }
 
