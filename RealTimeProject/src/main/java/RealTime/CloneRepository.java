@@ -1,10 +1,15 @@
+package RealTime;
+
+//clone repository using Executor
+//get matricNo of the repo
+//store the termination time 
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -15,15 +20,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 /**
  *
- * @author Aman
+ * @author Group4
  */
 public class CloneRepository {
     static class Runner implements Callable<String> {
@@ -63,7 +66,7 @@ public class CloneRepository {
                 Future<String> future = FixedThreadPool.submit(new Runner(repo,Path));
                 futures.put(future,repo);
                 repos.add(repo);
-    }
+            }
         } catch (FileNotFoundException ex) {
                 Logger.getLogger(CloneRepository.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException | ParseException ex) {
