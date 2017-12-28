@@ -8,7 +8,9 @@ package RealTime;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -19,8 +21,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -43,42 +43,30 @@ public class CloneRepository {
         @Override
         public String call() throws Exception {
             JGitClone.clone(git,folderpath);
-//            Set<File> FileSet = new HashSet();
-//            File Path = new File (folderpath + git.substring(git.lastIndexOf(".git")-6,git.lastIndexOf(".git")));
-//            
-//            很重要
-//            FileSet = FindJavaFile.getJavaFiles(Path,FileSet);
             return git;
         }
     }
 
-    public static void CloneRep() throws InterruptedException {
-        JFileChooser fc = new JFileChooser(""); 
-        fc.setMultiSelectionEnabled(false);
-        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        int returnValue = fc.showOpenDialog(null);  
-        String folderpath = null;
+    public static List <String> CloneRep(String Path, String Foldername) throws InterruptedException, IOException {
         
-        if (returnValue == JFileChooser.APPROVE_OPTION){  
-            folderpath = fc.getSelectedFile().getPath();
-        } else{
-            System.out.println("Failed");
-        }
-        String foldername = JOptionPane.showInputDialog("Please input folder name you want create to store your files:");        
-        folderpath = folderpath + "/" + foldername + "/";
+        ExecutorService FixedThreadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
         
         JSONParser parser = new JSONParser();
         Object obj;
-        ExecutorService FixedThreadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
         Map<Future<String>,String> futures = new HashMap<>();
+        String repo = null;
+        
+        List <String> repos = new ArrayList();
+        
         try {
             obj = parser.parse(new FileReader("githubrepo.json"));
             JSONObject jsonObject = (JSONObject) obj;            
-            for (int i = 1; i < 34; i++) {
+            for (int i = 9; i < 21; i++) {
                 String id = Integer.toString(i);
-                String repo = (String) jsonObject.get(id);
-                Future<String> future = FixedThreadPool.submit(new Runner(repo,folderpath));
+                repo = (String) jsonObject.get(id);
+                Future<String> future = FixedThreadPool.submit(new Runner(repo,Path));
                 futures.put(future,repo);
+                repos.add(repo);
             }
         } catch (FileNotFoundException ex) {
                 Logger.getLogger(CloneRepository.class.getName()).log(Level.SEVERE, null, ex);
@@ -87,14 +75,19 @@ public class CloneRepository {
         }
         for(Future<String> fu:futures.keySet()){
             try {
-                fu.get(1, TimeUnit.MINUTES);
+                fu.get(2, TimeUnit.MINUTES);
             }catch (TimeoutException ex) {
                 System.out.println("\nRepo \""+futures.get(fu)+"\" download timed out!\n");
                 fu.cancel(true);
+                String matric = futures.get(fu);
+                String matricL = matric.substring(matric.lastIndexOf(".git")-6, matric.lastIndexOf(".git"));
+                LogFile.CreateLog("The repository of " + matricL + " downloading time out!",Path, matricL);
             } catch (ExecutionException ex) {
                 Logger.getLogger(CloneRepository.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         FixedThreadPool.shutdown();
+        return repos;
     }
 }
+
