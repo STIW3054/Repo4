@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="RealTimeProject" type="Project" date="2017-12-28" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "3.75" stddev = "2.969" max = "16" maxinrange="false">
+         <Value name="treeFile" source ="ExcelFile.java" package ="RealTime" value ="16" inrange="false"/>
+         <Value name="compile" source ="CompileFile.java" package ="RealTime" value ="8"/>
+         <Value name="filter_files_by_name" source ="FilterFile.java" package ="RealTime" value ="8"/>
+         <Value name="CloneRep" source ="CloneRepository.java" package ="RealTime" value ="7"/>
+         <Value name="writePDF" source ="PDFfile.java" package ="RealTime" value ="6"/>
+         <Value name="sort" source ="RunFile.java" package ="RealTime" value ="6"/>
+         <Value name="execute" source ="ExecuteTerminal.java" package ="RealTime" value ="5"/>
+         <Value name="filter_files_by_type" source ="FilterFile.java" package ="RealTime" value ="5"/>
+         <Value name="run" source ="RunFile.java" package ="RealTime" value ="5"/>
+         <Value name="Save" source ="ExcelFile.java" package ="RealTime" value ="4"/>
+         <Value name="isMaven" source ="FilterFile.java" package ="RealTime" value ="4"/>
+         <Value name="download" source ="JGitClone.java" package ="RealTime" value ="4"/>
+         <Value name="main" source ="MainProcess.java" package ="RealTime" value ="4"/>
+         <Value name="sort" source ="CompileFile.java" package ="RealTime" value ="3"/>
+         <Value name="createErrorFile" source ="ErrorFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateError" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateLog" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateOutput" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="getOutFile" source ="PDFfile.java" package ="RealTime" value ="3"/>
+         <Value name="RunFile.Runner#call" source ="RunFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateExcel" source ="ExcelFile.java" package ="RealTime" value ="2"/>
+         <Value name="addKeywords" source ="ExcelFile.java" package ="RealTime" value ="2"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="gitPull" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="MainProcess.Runner#call" source ="MainProcess.java" package ="RealTime" value ="2"/>
+         <Value name="readOutFile" source ="PDFfile.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRepository.Runner#Runner" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository.Runner#call" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CreateForm" source ="ExcelFile.java" package ="RealTime" value ="1"/>
+         <Value name="clone" source ="JGitClone.java" package ="RealTime" value ="1"/>
+         <Value name="MainProcess.Runner#Runner" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[#accept" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="RunFile.Runner#Runner" source ="RunFile.java" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "1.844" stddev = "1.003" max = "3">
+         <Value name="Save" source ="ExcelFile.java" package ="RealTime" value ="3"/>
+         <Value name="treeFile" source ="ExcelFile.java" package ="RealTime" value ="3"/>
+         <Value name="filter_files_by_name" source ="FilterFile.java" package ="RealTime" value ="3"/>
+         <Value name="filter_files_by_type" source ="FilterFile.java" package ="RealTime" value ="3"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="3"/>
+         <Value name="CreateError" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateLog" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateOutput" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="MainProcess.Runner#Runner" source ="MainProcess.java" package ="RealTime" value ="3"/>
+         <Value name="writePDF" source ="PDFfile.java" package ="RealTime" value ="3"/>
+         <Value name="CloneRepository.Runner#Runner" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRep" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="compile" source ="CompileFile.java" package ="RealTime" value ="2"/>
+         <Value name="createErrorFile" source ="ErrorFile.java" package ="RealTime" value ="2"/>
+         <Value name="CreateForm" source ="ExcelFile.java" package ="RealTime" value ="2"/>
+         <Value name="clone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="download" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[#accept" source ="PDFfile.java" package ="RealTime" value ="2"/>
+         <Value name="readOutFile" source ="PDFfile.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile.Runner#Runner" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="run" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="sort" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="sort" source ="CompileFile.java" package ="RealTime" value ="1"/>
+         <Value name="CreateExcel" source ="ExcelFile.java" package ="RealTime" value ="1"/>
+         <Value name="execute" source ="ExecuteTerminal.java" package ="RealTime" value ="1"/>
+         <Value name="isMaven" source ="FilterFile.java" package ="RealTime" value ="1"/>
+         <Value name="gitPull" source ="JGitClone.java" package ="RealTime" value ="1"/>
+         <Value name="main" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="getOutFile" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository.Runner#call" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="addKeywords" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner#call" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner#call" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "2.719" stddev = "1.505" max = "9" maxinrange="false">
+         <Value name="treeFile" source ="ExcelFile.java" package ="RealTime" value ="9" inrange="false"/>
+         <Value name="compile" source ="CompileFile.java" package ="RealTime" value ="4"/>
+         <Value name="execute" source ="ExecuteTerminal.java" package ="RealTime" value ="4"/>
+         <Value name="filter_files_by_name" source ="FilterFile.java" package ="RealTime" value ="4"/>
+         <Value name="isMaven" source ="FilterFile.java" package ="RealTime" value ="4"/>
+         <Value name="writePDF" source ="PDFfile.java" package ="RealTime" value ="4"/>
+         <Value name="sort" source ="RunFile.java" package ="RealTime" value ="4"/>
+         <Value name="CloneRep" source ="CloneRepository.java" package ="RealTime" value ="3"/>
+         <Value name="sort" source ="CompileFile.java" package ="RealTime" value ="3"/>
+         <Value name="Save" source ="ExcelFile.java" package ="RealTime" value ="3"/>
+         <Value name="filter_files_by_type" source ="FilterFile.java" package ="RealTime" value ="3"/>
+         <Value name="download" source ="JGitClone.java" package ="RealTime" value ="3"/>
+         <Value name="CreateError" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateLog" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="CreateOutput" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="readOutFile" source ="PDFfile.java" package ="RealTime" value ="3"/>
+         <Value name="run" source ="RunFile.java" package ="RealTime" value ="3"/>
+         <Value name="createErrorFile" source ="ErrorFile.java" package ="RealTime" value ="2"/>
+         <Value name="CreateExcel" source ="ExcelFile.java" package ="RealTime" value ="2"/>
+         <Value name="addKeywords" source ="ExcelFile.java" package ="RealTime" value ="2"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="gitPull" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="MainProcess.Runner#call" source ="MainProcess.java" package ="RealTime" value ="2"/>
+         <Value name="main" source ="MainProcess.java" package ="RealTime" value ="2"/>
+         <Value name="getOutFile" source ="PDFfile.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile.Runner#call" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRepository.Runner#Runner" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository.Runner#call" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CreateForm" source ="ExcelFile.java" package ="RealTime" value ="1"/>
+         <Value name="clone" source ="JGitClone.java" package ="RealTime" value ="1"/>
+         <Value name="MainProcess.Runner#Runner" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[#accept" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="RunFile.Runner#Runner" source ="RunFile.java" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="RealTime" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "4" stddev = "0" max = "4">
+         <Value name="RealTime" package ="RealTime" value ="4"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "1" stddev = "0" max = "1">
+         <Value name="RealTime" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="RealTime" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="RealTime" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "1" stddev = "0" max = "1">
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="1"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="1"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="1"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="1"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="1"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="1"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="1"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="1"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "120" avg = "9.231" stddev = "6.141" max = "25">
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="25"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="17"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="11"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="11"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="11"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="11"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="9"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="7"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="5"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="4"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="4"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="3"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="3"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0.046" stddev = "0.16" max = "0.6">
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="0.6"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "12" avg = "0.923" stddev = "1.542" max = "5">
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="5"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="3"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "15" avg = "1.154" stddev = "3.718" max = "14">
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="14"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="4"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "10" avg = "0.769" stddev = "1.049" max = "3">
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="3"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="1"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "22" avg = "1.692" stddev = "1.264" max = "4">
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="4"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="3"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="3"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="3"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="2"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="1"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="1"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="1"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="1"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0" stddev = "0" max = "0">
+         <Value name="CloneRepository" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CloneRepository.Runner" source ="CloneRepository.java" package ="RealTime" value ="0"/>
+         <Value name="CompileFile" source ="CompileFile.java" package ="RealTime" value ="0"/>
+         <Value name="ErrorFile" source ="ErrorFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExcelFile" source ="ExcelFile.java" package ="RealTime" value ="0"/>
+         <Value name="ExecuteTerminal" source ="ExecuteTerminal.java" package ="RealTime" value ="0"/>
+         <Value name="FilterFile" source ="FilterFile.java" package ="RealTime" value ="0"/>
+         <Value name="JGitClone" source ="JGitClone.java" package ="RealTime" value ="0"/>
+         <Value name="LogFile" source ="LogFile.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="MainProcess.Runner" source ="MainProcess.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[" source ="PDFfile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile" source ="RunFile.java" package ="RealTime" value ="0"/>
+         <Value name="RunFile.Runner" source ="RunFile.java" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "13" avg = "13" stddev = "0" max = "13">
+         <Value name="RealTime" package ="RealTime" value ="13"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="RealTime" package ="RealTime" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="1"/>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="730"/>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "514" avg = "16.062" stddev = "11.489" max = "55">
+         <Value name="treeFile" source ="ExcelFile.java" package ="RealTime" value ="55"/>
+         <Value name="CloneRep" source ="CloneRepository.java" package ="RealTime" value ="36"/>
+         <Value name="main" source ="MainProcess.java" package ="RealTime" value ="32"/>
+         <Value name="writePDF" source ="PDFfile.java" package ="RealTime" value ="29"/>
+         <Value name="CreateExcel" source ="ExcelFile.java" package ="RealTime" value ="26"/>
+         <Value name="execute" source ="ExecuteTerminal.java" package ="RealTime" value ="23"/>
+         <Value name="CreateError" source ="LogFile.java" package ="RealTime" value ="23"/>
+         <Value name="CreateLog" source ="LogFile.java" package ="RealTime" value ="23"/>
+         <Value name="CreateOutput" source ="LogFile.java" package ="RealTime" value ="23"/>
+         <Value name="run" source ="RunFile.java" package ="RealTime" value ="21"/>
+         <Value name="download" source ="JGitClone.java" package ="RealTime" value ="20"/>
+         <Value name="CreateForm" source ="ExcelFile.java" package ="RealTime" value ="19"/>
+         <Value name="createErrorFile" source ="ErrorFile.java" package ="RealTime" value ="18"/>
+         <Value name="getOutFile" source ="PDFfile.java" package ="RealTime" value ="18"/>
+         <Value name="sort" source ="RunFile.java" package ="RealTime" value ="18"/>
+         <Value name="filter_files_by_name" source ="FilterFile.java" package ="RealTime" value ="15"/>
+         <Value name="Save" source ="ExcelFile.java" package ="RealTime" value ="14"/>
+         <Value name="isMaven" source ="FilterFile.java" package ="RealTime" value ="14"/>
+         <Value name="readOutFile" source ="PDFfile.java" package ="RealTime" value ="14"/>
+         <Value name="compile" source ="CompileFile.java" package ="RealTime" value ="13"/>
+         <Value name="addKeywords" source ="ExcelFile.java" package ="RealTime" value ="13"/>
+         <Value name="filter_files_by_type" source ="FilterFile.java" package ="RealTime" value ="13"/>
+         <Value name="sort" source ="CompileFile.java" package ="RealTime" value ="11"/>
+         <Value name="MainProcess.Runner#call" source ="MainProcess.java" package ="RealTime" value ="8"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="6"/>
+         <Value name="RunFile.Runner#call" source ="RunFile.java" package ="RealTime" value ="6"/>
+         <Value name="gitClone" source ="JGitClone.java" package ="RealTime" value ="5"/>
+         <Value name="gitPull" source ="JGitClone.java" package ="RealTime" value ="5"/>
+         <Value name="MainProcess.Runner#Runner" source ="MainProcess.java" package ="RealTime" value ="3"/>
+         <Value name="CloneRepository.Runner#Runner" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="CloneRepository.Runner#call" source ="CloneRepository.java" package ="RealTime" value ="2"/>
+         <Value name="clone" source ="JGitClone.java" package ="RealTime" value ="2"/>
+         <Value name="RunFile.Runner#Runner" source ="RunFile.java" package ="RealTime" value ="2"/>
+         <Value name="PDFfile.anonymous#~getOutFile~QString;[#accept" source ="PDFfile.java" package ="RealTime" value ="1"/>
+      </Values>
+   </Metric>
+   </Metrics>
